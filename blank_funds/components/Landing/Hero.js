@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="relative flex items-center justify-center max-w-full w-screen bg-tertiary mx-auto">
+    <div className="relative flex items-center justify-center max-w-full w-screenk drop-shadow-3xl bg-tertiary mx-auto">
       <div className="absolute h-full z-30 w-full justify-center flex items-center">
-        <div className="text-background font-semibold text-center text-5xl max-w-5xl">
+        <div className="text-background font-semibold text-center text-8xl">
           We are a full-cycle agency that delivers turnkey projects, and by
           identifying .
         </div>
