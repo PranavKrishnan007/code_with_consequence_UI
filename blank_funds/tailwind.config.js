@@ -17,7 +17,13 @@ module.exports = {
       secondary: '#F0DBDB',
       primary: '#DBA39A',
     },
-    extend: {},
+    extend: {dropShadow: {
+        '3xl': '0px 0px 90px rgba(192, 141, 93,0.4)',
+        
+      }},
+    fontFamily: {
+      monteserrat: ['Montserrat', 'sans-serif']
+    }
   },
   plugins: [],
 }
