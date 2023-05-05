@@ -19,6 +19,7 @@ module.exports = {
     },
     extend: {dropShadow: {
         '3xl': '0px 0px 90px rgba(192, 141, 93,0.4)',
+        '2xl': '0px 0px 60px rgba(192, 141, 93,0.4)'
         
       }},
     fontFamily: {
