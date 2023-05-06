@@ -5,33 +5,30 @@ import { GoLocation } from "react-icons/go";
 export const orgs = [
   {
     name: "UNICEF",
-    details:
-      "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
+    details: "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
     location: "pfund",
     image: "/assets/kids_looking_up.png",
     url: "pfund",
     phone:"8588890427",
-email:"pfund@gmail.com"
+    email:"pfund@gmail.com"
   },
   {
     name: "pfund",
-    details:
-      "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
+    details: "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
     location: "pfund",
     image: "/assets/kids_looking_up.png",
     url: "pfund",
-     phone:"8588890427",
-email:"pfund@gmail.com"
+    phone:"8588890427",
+    email:"pfund@gmail.com"
   },
   {
     name: "ABC",
-    details:
-      "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
+    details: "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
     location: "pfund",
     image: "/assets/kids_looking_up.png",
     url: "pfund",
-     phone:"8588890427",
-email:"pfund@gmail.com"
+    phone:"8588890427",
+    email:"pfund@gmail.com"
   },
 ];
 

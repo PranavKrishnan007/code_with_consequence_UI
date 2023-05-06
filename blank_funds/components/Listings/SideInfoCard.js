@@ -40,3 +40,4 @@ export default function SideInfoCard({ org }) {
     </div>
   );
 }
+export default SideInfoCard;
