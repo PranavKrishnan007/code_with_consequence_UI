@@ -3,6 +3,8 @@ import AboutSection from "../components/Landing/About";
 import Hero from "../components/Landing/Hero";
 import Achievements from "../components/Landing/Achievements"
 import HeroBottom from "../components/Landing/HeroBottom";
+import Block from "@/components/Landing/block";
+import Footer from "@/components/Landing/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
         <HeroBottom />
         <AboutSection />
         <Achievements />
+        <Block/>
+        <Footer/>
       </div>
     </div>
   );
