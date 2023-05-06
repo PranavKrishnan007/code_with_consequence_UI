@@ -6,7 +6,7 @@ export default function Navbar() {
     const router = useRouter();
 
   return (
-    <div className='flex py-10'>
+    <div className='flex py-10 fixed z-50 bg-background w-screen drop-shadow-3xl px-28 '>
         <div className='flex-none'>
             <BsFillGridFill size={22}/>
         </div>
