@@ -27,7 +27,7 @@ export default function SideInfoCard({ org }) {
           <p className={styles.orglocationText}>{org.location}</p>
         </div>
         <div className={styles.details}>
-          <p>{org.details}</p>
+          <p>{org.about}</p>
         </div>
         <div className={styles.contactInfo}>
           <h1 className={styles.heading}>React Out to Us</h1>
@@ -52,7 +52,7 @@ export default function SideInfoCard({ org }) {
         </div>
         <div>
 
-          <div className={styles.donateButton} onClick={() => router.push("/donate")}>Donate</div>
+          <div className={styles.donateButton} onClick={() => router.push(`/donate/${org.id}`)}>Donate</div>
 
         </div>
       </div>
