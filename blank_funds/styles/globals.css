@@ -18,6 +18,15 @@
     }
 }
 
+.heightDonate {
+    height: 89%;
+}
+@media only screen and (min-width: 768px) { /* Adjust this breakpoint according to your requirements */
+    .heightDonate {
+        height: 90%;
+    }
+}
+
 .flexyDown {
     display: flex;
     flex-direction: column;
@@ -26,6 +35,10 @@
 .flexySide {
     display: flex;
     flex-direction: row;
+}
+
+.paddingDonate {
+    padding: 2rem;
 }
 
 :root {
