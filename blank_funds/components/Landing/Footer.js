@@ -4,7 +4,7 @@ import styles from "styles/Footer.module.css"
 
 export default function Footer() {
     return (
-        <div className="dropShadow-2xl">
+        <div id="Contact" className="dropShadow-2xl">
             {/* this is custom CSS not tailwind CHILL ! */}
             <div className={styles.container}>
                 <div className={styles.grid}>

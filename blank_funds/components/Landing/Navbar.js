@@ -1,7 +1,9 @@
 import React from "react";
 import { BsFillGridFill } from "react-icons/bs";
 import { useRouter } from "next/router";
-import styles from "styles/Navbar.module.css";
+import styles from '@/styles/Navbar.module.css';
+import logo from '../../public/assets/Logo.svg';
+import Image from "next/image";
 
 export default function Navbar() {
     const router = useRouter();
@@ -18,10 +20,23 @@ export default function Navbar() {
                 <div className={styles.menuItem} onClick={() => router.push("/listings")}>
                     Organisations
                 </div>
-                <div className={styles.menuItem}>Stories</div>
-                <div className={styles.menuItem}>About</div>
-                <div className={styles.menuItem}>Profile</div>
+                <div>
+                    <Image
+                        src={logo}
+                        alt="Logo"
+                        width={30}
+                        style={{ cursor: "pointer", marginTop: "-6px" }}
+                        onClick={() => router.push("/")}
+                    />
+                </div>
+                <div className={styles.menuItem} onClick={() => router.push("/donate")}>
+                Donate
+                </div>
+                <div  className={styles.menuItem} onClick={() => router.push("/#Contact")}>
+                    Contact
+                </div>
             </div>
         </div>
     );
 }
+verticalAlign: "Top"

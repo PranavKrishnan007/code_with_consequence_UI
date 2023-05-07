@@ -24,7 +24,20 @@
     font-weight: 500;
 }
 
-.menu-item {
+.button{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-bottom-width: 2px;
+    border-color: transparent;
+    cursor: pointer;
+    margin-left: 5rem;
+}
+.button:hover{
+    border-color:#DBA39A;
+
+}
+
+.menuItem {
     padding-bottom: 0.25rem;
     border-bottom: 2px solid transparent;
     cursor: pointer;
@@ -32,7 +45,7 @@
     padding-right: 0.75rem;
 }
 
-.menu-item:hover {
+.menuItem:hover {
     border-color: var(--primary);
 }
 
