@@ -2,27 +2,36 @@
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: 1rem; /* px-4 */
-    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem;
+    /* px-4 */
+    padding-left: 1rem;
+    /* px-4 */
 }
 
-@media only screen and (min-width: 768px) { /* Adjust this breakpoint according to your requirements */
+@media only screen and (min-width: 768px) {
+
+    /* Adjust this breakpoint according to your requirements */
     .containerCSS {
-        padding-right: 2rem; /* px-8 */
-        padding-left: 2rem; /* px-8 */
+        padding-right: 2rem;
+        /* px-8 */
+        padding-left: 2rem;
+        /* px-8 */
     }
 }
 
 .heightDonate {
     height: 89%;
 }
-@media only screen and (min-width: 768px) { /* Adjust this breakpoint according to your requirements */
+
+@media only screen and (min-width: 768px) {
+
+    /* Adjust this breakpoint according to your requirements */
     .heightDonate {
         height: 90%;
     }
 }
 
-.leftSideDiv{
+.leftSideDiv {
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -32,6 +41,7 @@
 }
 
 .l_Heading {
+
     color: #FFFFFF;
     font-size: 2.75rem;
     line-height: 2.5rem;
@@ -66,4 +76,124 @@
     color: #FFFFFF;
     opacity: 0.8;
     font-size: 1rem;
+}
+
+.icon {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.iconline1 {
+    border-top: 2px solid;
+    width: 33.33333%;
+    margin-left: 28px;
+    margin-top: 12px;
+    border-color: var(--background);
+}
+
+.iconline2 {
+    border-top: 2px solid;
+    width: 33.33333%;
+    margin-left: 24px;
+    margin-top: 12px;
+    border-color: var(--background);
+}
+
+.icondesign {
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    color: var(--background);
+}
+
+.dropdownicon {
+    margin-top: 3px;
+}
+
+.dropdown {
+    background-color: var(--tertiary);
+    margin-top: 24px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+    border-radius: 4px;
+    color: var(--primary);
+    font-weight: bold;
+    display: flex;
+}
+
+.dropdownclick {
+    background-color: var(--background);
+    margin-top: 3px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.4);
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.7rem;
+}
+
+.lidropdown {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    border-radius: 0.7rem;
+
+}
+
+.lidropdown:hover {
+    background-color: var(--secondary);
+    border-radius: 0.7rem;
+}
+
+.textarea {
+    width: 100%;
+    height: 5rem;
+    background: rgba(240, 219, 219, 0.5);
+    border: 2px solid #FFFFFF;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.textarea:focus {
+    outline: 2px solid #C08D5D;
+}
+
+.textarea::placeholder {
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.submitButton {
+    width: 50%;
+    display: flex;
+    background-color: var(--primary);
+    color: white;
+    border: 2px solid var(--background);
+    text-align: center;
+    margin-top: 32px;
+    margin-left: 96px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+
+    cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition-duration: 0.2s;
+
+}
+
+.submitButton:hover {
+    background-color: var(--tertiary);
+    border: none;
+    color: var(--primary);
 }
