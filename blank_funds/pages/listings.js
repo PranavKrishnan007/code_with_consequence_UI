@@ -9,7 +9,8 @@ import Loading from "@/components/loading";
 export default function listings() {
   const [loading, setLoading] = useState(true);
   const [organisations, setOrganisations] = useState([]);
-  const [selectedOrg, setSelectedOrg] = useState(null);
+  const [selectedOrg, setSelectedOrg] = useState({});
+
 
 
   useEffect(() => {
