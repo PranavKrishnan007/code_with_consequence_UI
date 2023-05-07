@@ -38,7 +38,7 @@ export default function listings() {
       { loading ? <Loading />: (
         <div style={{ display: "flex", flexDirection: "row" }}>
           <div style={{ width: "66%", paddingRight: "1.5rem" }}>
-            <OrgCard onOrgSelection={handleOrgSelection} selectedOrg={selectedOrg} />
+            <OrgCard onOrgSelection={handleOrgSelection} selectedOrg={selectedOrg} orgs={organisations} />
           </div>
           <div style={{
             position: "fixed",
