@@ -5,15 +5,22 @@
 
 .hrContainer {
     width: 100%;
-    padding-left: 5rem;
+    /*padding-left: 5rem;*/
 }
 
 .borderStyle {
     border: 2px solid var(--poop);
 }
 
-.gridContainer {
-    padding-left: 7rem;
+.girdSection {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+}
+@media (min-width: 768px) {
+    .girdSection {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 .statCard {
