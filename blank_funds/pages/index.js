@@ -16,8 +16,8 @@ export default function Home() {
         <AboutSection />
         <Achievements />
         <Block/>
-        <Footer/>
       </div>
+      <Footer/>
     </div>
   );
 }
