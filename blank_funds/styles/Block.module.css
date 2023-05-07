@@ -1,47 +1,73 @@
 .blockWrapper {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-.gridContainer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .gridContainer {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2.5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-
-@media (min-width: 768px) {
+    gap: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  @media screen and (min-width: 768px) {
     .gridContainer {
-        grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 3rem;
+      padding-right: 3rem;
     }
-}
-
-.block {
+  }
+  
+  .block {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    padding: 2rem;
-}
-
-.title {
-    font-weight:300;
-    font-size: 3rem;
-    color: #3F4042;
-}
-
-.subtitle {
-    font-weight: 700;
-    font-size: 6rem;
-    color: #3F4042;
-}
-
-.text2xl {
-    font-weight: 600;
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-weight: 300;
     font-size: 2rem;
-}
-
-.textxl {
-    font-size: 1rem;
-    padding-top: 0.75rem;
-}
+    color: #3F4042;
+  }
+  
+  .subtitle {
+    font-weight: 700;
+    font-size: 4rem;
+    color: #3F4042;
+  }
+  
+  .text2xl {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .textxl {
+    font-size: 0.875rem;
+    padding-top: 0.5rem;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .blockWrapper {
+      padding-top: 5rem;
+      padding-bottom: 5rem;
+    }
+  
+    .title {
+      font-size: 3rem;
+    }
+  
+    .subtitle {
+      font-size: 6rem;
+    }
+  
+    .text2xl {
+      font-size: 2rem;
+    }
+  
+    .textxl {
+      font-size: 1rem;
+    }
+  }
+  

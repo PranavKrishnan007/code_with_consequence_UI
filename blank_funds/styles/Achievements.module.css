@@ -1,45 +1,77 @@
 .achievements {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-}
-
-.hrStyle {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .hrStyle {
     stroke-width: 90px;
     stroke: var(--poop);
-}
-
-.achievementsTitle {
-    font-size: 4rem;
-    padding-left: 5rem;
+  }
+  
+  .achievementsTitle {
+    font-size: 2.5rem;
+    padding-left: 1.5rem;
     font-weight: 600;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
     color: #3F4042;
-}
-
-.gridContainer {
-    padding-left: 4rem;
-    padding-bottom: 2.5rem;
-}
-
-.statCard {
+  }
+  
+  .gridContainer {
+    padding-left: 1.5rem;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 1.5rem;
+  }
+  
+  .statCard {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 2rem;
-    margin: 1.5rem;
+    padding: 1.5rem;
+    margin: 0.75rem;
     background-color: var(--background);
-box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.2);
-}
-
-.statTitle {
-    font-size: 1.5rem;
+    box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.2);
+  }
+  
+  .statTitle {
+    font-size: 1.25rem;
     font-weight: 600;
     color: #3F4042;
-}
-
-.statText {
-    font-size: 1.125rem;
+  }
+  
+  .statText {
+    font-size: 1rem;
     color: var(--primary-color);
-    padding: 1rem;
-}
+    padding: 0.5rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .achievementsTitle {
+      font-size: 4rem;
+      padding-left: 5rem;
+      padding-top: 2.5rem;
+      padding-bottom: 1rem;
+    }
+  
+    .gridContainer {
+      padding-left: 4rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 2rem;
+    }
+  
+    .statCard {
+      padding: 2.5rem;
+      margin: 1.5rem;
+    }
+  
+    .statTitle {
+      font-size: 1.5rem;
+    }
+  
+    .statText {
+      font-size: 1.125rem;
+    }
+  }
+  
