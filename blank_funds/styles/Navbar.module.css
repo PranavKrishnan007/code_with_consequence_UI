@@ -58,3 +58,28 @@
         padding-top: 0.5rem;
     }
 }
+.searchBar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 25px;
+    padding: 5px 10px;
+    
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    width: 200px;
+}
+
+.searchBar svg {
+    margin-left: 5px;
+    cursor: pointer;
+    color: var(--primary);
+}
+.searchBar::placeholder{
+    color: var(--primary);
+}
