@@ -1,55 +1,64 @@
 .container {
-    padding-top: 5rem;
-
-}
-
-.grid {
+    padding-top: 3rem;
+  }
+  
+  .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2.5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-.padding{
+    gap: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 3rem;
+      padding-right: 3rem;
+    }
+  }
+  
+  .padding {
     width: 100%;
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .padding {
+      padding-left: 12rem;
+      padding-right: 12rem;
     }
-}
-
-.item {
+  }
+  
+  .item {
     display: flex;
     justify-content: start;
     flex-direction: column;
-    padding:2rem;
+    padding: 1.5rem;
     cursor: pointer;
-}
-
-.item span {
-    font-size: 1.5rem;
+  }
+  
+  .item span {
+    font-size: 1.25rem;
     font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.item div {
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .item div {
+    margin-top: 0.5rem;
+    font-size: 1rem;
     font-weight: normal;
     line-height: 1.5;
-}
-
-.item .flex {
-    margin-top: 1rem;
-}
-
-.item .flex svg {
+  }
+  
+  .item .flex {
+    margin-top: 0.5rem;
+  }
+  
+  .item .flex svg {
     margin-right: 1rem;
-}
+  }
+  
