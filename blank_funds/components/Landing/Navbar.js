@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillGridFill } from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
 import { useRouter } from "next/router";
 import styles from '@/styles/Navbar.module.css';
 import logo from '../../public/assets/Logo.svg';
@@ -14,6 +15,7 @@ export default function Navbar() {
                 <BsFillGridFill size={22} />
             </div>
             <div className={styles.menu}>
+
                 <div className={`${styles.menuItem} ${styles.home}`} onClick={() => router.push("/")}>
                     Home
                 </div>
@@ -30,12 +32,19 @@ export default function Navbar() {
                     />
                 </div>
                 <div className={styles.menuItem} onClick={() => router.push("/donate")}>
-                Donate
+                    Donate
                 </div>
-                <div  className={styles.menuItem} onClick={() => router.push("/#Contact")}>
+                <div className={styles.menuItem} onClick={() => router.push("/#Contact")}>
                     Contact
                 </div>
+
             </div>
+            {/* Start search bar */}
+            <div className={styles.searchBar}>
+                <input className={styles.searchBar} type="text" placeholder="Search" />
+                <BsSearch size={20} />
+            </div>
+            {/* End of search bar */}
         </div>
     );
 }
