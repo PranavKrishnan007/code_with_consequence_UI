@@ -97,3 +97,40 @@
     transition: all 0.3s ease-in-out;
     text-align: center;
 }
+@media screen and (max-width: 1200px) {
+
+    .orgCard,
+    .orgCardSelected {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .orgname,
+    .orgdetails,
+    .orglocation,
+    .orgreadmore {
+        padding-left: 0;
+    }
+
+    .Button {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .orgCard,
+    .orgCardSelected {
+        margin: 2rem auto;
+        padding: 2rem;
+    }
+
+    .orgname {
+        font-size: 2rem;
+    }
+
+    .orgdetails {
+        font-size: 1rem;
+    }
+}

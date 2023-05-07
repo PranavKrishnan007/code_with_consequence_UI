@@ -1,5 +1,5 @@
 import React from "react";
-import styles from 'styles/Achievements.module.css';
+import styles from '@/styles/Achievements.module.css';
 
 const STATS = [
   {
@@ -21,7 +21,7 @@ export default function HeroBottom() {
     <div className={styles.achievements}>
       <hr className={styles.hrStyle} />
       <h1 className={styles.achievementsTitle}>Achievements</h1>
-      <div className={`${styles.gridContainer} grid grid-cols-1 gap-10 md:grid-cols-3`}>
+      <div className={`${styles.gridContainer}  ${styles.heroBottom}`}>
         {STATS.map((stat) => (
           <div className={styles.statCard}>
             <div className={styles.statTitle}>

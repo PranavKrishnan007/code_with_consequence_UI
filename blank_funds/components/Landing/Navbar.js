@@ -8,6 +8,7 @@ import Image from "next/image";
 
 export default function Navbar() {
     const router = useRouter();
+    console.log(router);
 
     return (
         <div className={styles.navbar}>
@@ -40,10 +41,14 @@ export default function Navbar() {
 
             </div>
             {/* Start search bar */}
-            <div className={styles.searchBar}>
-                <input className={styles.searchBar} type="text" placeholder="Search" />
-                <BsSearch size={20} />
-            </div>
+            {router.pathname === '/listings' ? 
+                <div className={styles.searchBar}>
+                    <input className={styles.searchBar} type="text" placeholder="Search" />
+                    <BsSearch size={20} />
+                </div>
+                : 
+                null 
+            }   
             {/* End of search bar */}
         </div>
     );

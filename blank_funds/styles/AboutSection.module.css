@@ -1,52 +1,55 @@
 .aboutsection {
     display: flex;
     flex-direction: column;
-    gap: 10rem;
-    padding: 2.5rem;
-}
-
-.aboutcontainer {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--background);
-box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.25)}
-
-.aboutcontent {
+    gap: 5rem;
+    padding: 0.1rem;
+  }
+  
+  .aboutcontainer {
     display: flex;
     flex-direction: column;
-    padding: 5rem 5rem 5rem 2rem;
-    width: 50%;
-}
-
-.aboutsubtitle {
+    background-color: var(--background);
+    box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.25);
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  
+  .aboutcontent {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .aboutsubtitle {
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #3F4042;
-    padding-left: 1rem;
-}
-
-.abouttitle {
+    margin-bottom: 0rem;
+  }
+  
+  .abouttitle {
     font-weight: 600;
-    font-size: 5rem;
-    color:#3F4042 ;
-}
-
-.wavyline {
-    padding-top: 1.25rem;
+    font-size: 3.5rem;
+    color: #3F4042;
+    margin-bottom: 1rem;
+  }
+  
+  .wavyline {
+    padding-top: 0.75rem;
     margin-left: 0.5rem;
-}
-
-.aboutdescription {
-    padding: 2rem;
+  }
+  
+  .aboutdescription {
+    padding: 2rem 0;
     font-size: 1.1rem;
-}
-
-.aboutbutton {
+  }
+  
+  .aboutbutton {
     position: relative;
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 0.75rem 3rem 0.75rem 1rem;
+    padding: 0.75rem 1.5rem;
     overflow: hidden;
     font-weight: 600;
     text-decoration: none;
@@ -54,52 +57,72 @@ box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.25)}
     transition: all 0.15s ease-in-out;
     border-radius: 0.375rem;
     background-color: #f9fafb;
-}
-
-.aboutbutton:hover {
-    padding-left: 2.5rem;
-    padding-right: 1.5rem;
- 
-}
-
-.aboutbutton .underline {
+  }
+  
+  .aboutbutton:hover {
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+  
+  .aboutbutton .underline {
     position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 0.063rem;
     transition: all 0.15s ease-in-out;
     background-color: #C08D5D;
-}
-
-.aboutbutton:hover .underline {
+  }
+  
+  .aboutbutton:hover .underline {
     height: 100%;
-}
-
-.aboutbutton .arrow {
+  }
+  
+  .aboutbutton .arrow {
     position: absolute;
     padding-right: 1rem;
-    
     transition: transform 0.2s ease-out;
-}
-
-
-
-.aboutbutton-text {
+  }
+  
+  .aboutbutton-text {
     position: relative;
     width: 100%;
     text-align: left;
     transition: color 0.2s ease-in-out;
-}
-
-.aboutbutton:hover .aboutbuttontext {
+  }
+  
+  .aboutbutton:hover .aboutbutton-text {
     color: #ffffff;
-}
-
-.aboutimage {
+  }
+  
+  .aboutimage {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2.5rem;
-    width: 50%;
-}
+    padding: 2rem;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .aboutsection {
+      gap: 10rem;
+      padding: 2.5rem;
+    }
+  
+    .aboutcontainer {
+      flex-direction: row;
+      margin-bottom: 4rem;
+    }
+  
+    .aboutcontent {
+      width: 50%;
+      padding: 5rem 5rem 5rem 2rem;
+    }
+  
+    .aboutimage {
+      width: 50%;
+    }
+  }
+  
