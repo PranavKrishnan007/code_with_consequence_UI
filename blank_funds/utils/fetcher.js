@@ -1,4 +1,5 @@
-const BASE_URL = "http://localhost:8000/api";
+// const BASE_URL = "http://localhost:8000/api";
+const BASE_URL = "http://anshuman.pythonanywhere.com/api";
 
 export default async function fetcher(url, method="GET", body) {
   const apiUrl = BASE_URL + url;
