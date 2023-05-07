@@ -32,7 +32,7 @@ export default function AboutSection() {
             </div>
             <div className={styles.aboutcontainer}>
                 <div className={styles.aboutimage}>
-                    <img src='/assets/kids_looking_up.png' alt='kids' width={500} height={500} />
+                    <img src='/assets/Charity.png' alt='kids' width={500} height={500} />
                 </div>
                 <div className={styles.aboutcontent}>
                     <div className={styles.aboutsubtitle}>Donate to</div>
