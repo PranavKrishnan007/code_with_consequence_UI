@@ -1,3 +1,10 @@
+.heading {
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    margin-bottom: 1rem;
+}
+
 .sideInfoCard {
     display: flex;
     flex-direction: column;
@@ -21,7 +28,8 @@
 .title {
     font-size: 2.5rem;
     font-weight: 600;
-    margin-bottom: 1.5rem;
+    padding-top: 3.5rem;
+
 }
 
 .details {
@@ -30,12 +38,14 @@
     margin-bottom: 2rem;
     text-align: justify;
     line-height: 1.5;
+    font-size: 1.2rem;
 }
 
 .contactInfo {
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
 
 .contactItem {
@@ -47,6 +57,13 @@
     margin-left: 1rem;
 }
 
+.funds {
+    margin-top: 1rem;
+    display: flex;
+    gap: 12rem;
+    white-space: nowrap;
+}
+
 .progress {
     width: 100%;
     margin-bottom: 2rem;
@@ -55,27 +72,46 @@
 .progressBar {
     width: 100%;
     height: 1rem;
-    background-color: var(--background);
+    background-color: none;
     border-radius: 1rem;
     position: relative;
+    border: 1px solid var(--background);
 }
 
 .progressFill {
-    width: 45%;
     height: 100%;
     background-color: var(--tertiary);
     border-radius: 1rem;
 }
 
 .donateButton {
-    border: 0.4rem solid var(--primary);
-    background-color: var(--background);
-    color: var(--primary);
+    border: 1.5px solid var(--background);
+    background-color: none;
+    color: var(--background);
     font-size: 1.5rem;
     font-weight: 500;
     padding: 1rem 3rem;
+    margin-top: 1rem;
     border-radius: 3rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     text-align: center;
+}
+
+.donateButton:hover {
+    border: 1.5px solid var(--primary);
+    background-color: var(--background);
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+
+.location {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 01rem;
+}
+
+.orglocationText {
+    margin-left: 16px;
 }
