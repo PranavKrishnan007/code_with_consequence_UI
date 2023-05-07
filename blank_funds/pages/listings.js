@@ -9,7 +9,7 @@ export default function listings() {
   const [loading, setLoading] = useState(true);
   const [organisations, setOrganisations] = useState([]);
   const [selectedOrg, setSelectedOrg] = useState(null);
- 
+
 
   useEffect(() => {
     setLoading(true);
@@ -30,14 +30,14 @@ export default function listings() {
     setSelectedOrg(org);
   };
 
-  if(loading) return (<div>Loading...</div>);
+  if (loading) return (<div>Loading...</div>);
 
   return (
     <div>
       <Navbar />
-      <div style={{display: "flex", flexDirection: "row"}}>
-        <div style={{width: "66%", paddingRight: "1.5rem"}}>
-          <OrgCard onOrgSelection={handleOrgSelection} selectedOrg={selectedOrg}/>
+      <div style={{ display: "flex", flexDirection: "row" }}>
+        <div style={{ width: "66%", paddingRight: "1.5rem" }}>
+          <OrgCard onOrgSelection={handleOrgSelection} selectedOrg={selectedOrg} />
         </div>
         <div style={{
           position: "fixed",

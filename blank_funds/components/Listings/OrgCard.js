@@ -57,7 +57,7 @@ const OrgCard = ({ onOrgSelection, selectedOrg }) => {
         <div
           key={id.name}
           className={selectedOrg === id ? styles.orgCardSelected : styles.orgCard}
-          
+
         >
           <div>
             <Image src={id.image} width={1024} height={1024} className="" />
@@ -73,9 +73,9 @@ const OrgCard = ({ onOrgSelection, selectedOrg }) => {
               <div className={styles.Button} onClick={() => handleClick(id)} >Read More</div>
 
             </div>
-            </div>
           </div>
-       
+        </div>
+
       ))}
     </div>
   );

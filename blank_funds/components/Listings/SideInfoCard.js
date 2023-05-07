@@ -41,9 +41,9 @@ export default function SideInfoCard({ org }) {
           </div>
         </div>
         <div>
-         
+
           <div className={styles.donateButton} onClick={() => router.push("/donate")}>Donate</div>
-          
+
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ export default function Navbar() {
                 <BsFillGridFill size={22} />
             </div>
             <div className={styles.menu}>
-                
+
                 <div className={`${styles.menuItem} ${styles.home}`} onClick={() => router.push("/")}>
                     Home
                 </div>
@@ -32,12 +32,12 @@ export default function Navbar() {
                     />
                 </div>
                 <div className={styles.menuItem} onClick={() => router.push("/donate")}>
-                Donate
+                    Donate
                 </div>
-                <div  className={styles.menuItem} onClick={() => router.push("/#Contact")}>
+                <div className={styles.menuItem} onClick={() => router.push("/#Contact")}>
                     Contact
                 </div>
-               
+
             </div>
             {/* Start search bar */}
             <div className={styles.searchBar}>
