@@ -61,7 +61,6 @@
 }
 
 .progressFill {
-    width: 45%;
     height: 100%;
     background-color: var(--tertiary);
     border-radius: 1rem;

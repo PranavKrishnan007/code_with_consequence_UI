@@ -12,20 +12,23 @@ export default function listings() {
 
   return (
     <div>
-    <Navbar />
-    <div className="container mx-auto px-8 md:px-16" id="listing">
-      
-      <div className="flex flex-row">
-        <div className="w-2/3 pr-6">
-          <OrgCard onOrgSelection={handleOrgSelection} />
+      <Navbar />
+      <div style={{display: "flex", flexDirection: "row"}}>
+        <div style={{width: "66%", paddingRight: "1.5rem"}}>
+          <OrgCard onOrgSelection={handleOrgSelection} selectedOrg={selectedOrg}/>
         </div>
-        <div
-          className="fixed right-0 top-0 pt-24 h-screen w-1/3 bg-white"
-        >
+        <div style={{
+          position: "fixed",
+          right: "0",
+          top: "0",
+          paddingTop: "6rem",
+          height: "100vh",
+          width: "33.33333%",
+          backgroundColor: "white"
+        }}>
           {selectedOrg && <SideInfoCard org={selectedOrg} />}
         </div>
       </div>
-    </div>
     </div>
   );
 }

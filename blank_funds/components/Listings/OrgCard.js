@@ -8,7 +8,7 @@ export const orgs = [
     name: "UNICEF",
     details:
       "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
-    location: "pfund",
+    location: "pfund, saftarganj society, nagarpatel vihar something.",
     image: "/assets/kids_looking_up.png",
     url: "pfund",
     phone: "8588890427",
@@ -36,7 +36,7 @@ export const orgs = [
   },
 ];
 
-const OrgCard = ({ onOrgSelection }) => {
+const OrgCard = ({ onOrgSelection, selectedOrg }) => {
   const handleClick = (org) => {
     if (onOrgSelection) {
       onOrgSelection(org);
@@ -48,7 +48,8 @@ const OrgCard = ({ onOrgSelection }) => {
       {orgs.map((id) => (
         <div
           key={id.name}
-          className={styles.orgCard}
+          className={selectedOrg === id ? styles.orgCardSelected : styles.orgCard}
+          onClick={() => handleClick(id)}
         >
           <div>
             <Image src={id.image} width={1024} height={1024} className="" />
@@ -60,12 +61,6 @@ const OrgCard = ({ onOrgSelection }) => {
               <div className={styles.orglocation}>
                 <GoLocation size={22}  />
                 <p className={styles.orgdocationText}>{id.location}</p>
-              </div>
-              <div
-                className={styles.orgreadmore}
-                onClick={() => handleClick(id)}
-              >
-                Read More
               </div>
             </div>
           </div>

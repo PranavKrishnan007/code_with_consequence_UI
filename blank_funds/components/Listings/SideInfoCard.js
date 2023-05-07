@@ -4,6 +4,8 @@ import { FiMail } from "react-icons/fi";
 import styles from "styles/SideInfoCard.module.css";
 
 export default function SideInfoCard({ org }) {
+  const percentage = (org.funds_required - org.funds_raised)/org.funds_required * 100;
+
   return (
     <div className={styles.sideInfoCard}>
       <div className={styles.content}>
@@ -23,7 +25,7 @@ export default function SideInfoCard({ org }) {
         </div>
         <div className={styles.progress}>
           <div className={styles.progressBar}>
-            <div className={styles.progressFill}></div>
+            <div className={styles.progressFill} style={{width: `${percentage}`}}></div>
           </div>
         </div>
         <div>
