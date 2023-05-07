@@ -6,6 +6,16 @@ import { GoLocation } from "react-icons/go";
 import { useRouter } from "next/router";
 
 export default function SideInfoCard({ org }) {
+  if (Object.keys(org).length === 0) {
+    return (
+      <div className={styles.sideInfoCard}>
+        <div className={styles.content}>
+          <h3 className={styles.title}>No organization selected</h3>
+          <p>Please select an organization from the list to see the details.</p>
+        </div>
+      </div>
+    );
+  }
   const percentage = (1 - (org.funds_required - org.funds_raised) / org.funds_required) * 100;
   const router = useRouter();
   return (
