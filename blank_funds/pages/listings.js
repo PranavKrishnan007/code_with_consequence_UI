@@ -1,14 +1,31 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Navbar from '@/components/Landing/Navbar.js';
 import OrgCard, { orgs } from '@/components/Listings/OrgCard.js';
 import SideInfoCard from '@/components/Listings/SideInfoCard.js';
+import fetcher from '../utils/fetcher';
 
 export default function listings() {
   const [selectedOrg, setSelectedOrg] = useState(orgs[0]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setLoading(true);
+    fetcher('/orgs')
+      .then((data) => {
+        console.log(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+      });
+  }, []);
 
   const handleOrgSelection = (org) => {
     setSelectedOrg(org);
   };
+
+  if(loading) return (<div>Loading...</div>);
 
   return (
     <div>
