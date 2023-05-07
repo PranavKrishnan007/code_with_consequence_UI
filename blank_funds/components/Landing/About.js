@@ -22,7 +22,7 @@ export default function AboutSection() {
                             <span className={styles.underline}></span>
                             <span className={styles.arrow} arrow-right></span>
                             <span className={styles.arrow} arrow-left></span>
-                            <span className={styles.aboutbuttontext}>Button Text</span>
+                            <span className={styles.aboutbuttontext}>READ MORE</span>
                         </a>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ export default function AboutSection() {
                             <span className={styles.underline}></span>
                             <span className={styles.arrow} arrow-right></span>
                             <span className={styles.arrow} arrow-left></span>
-                            <span className={styles.aboutbuttontext}>Button Text</span>
+                            <span className={styles.aboutbuttontext}>READ MORE</span>
                         </a>
                     </div>
                 </div>

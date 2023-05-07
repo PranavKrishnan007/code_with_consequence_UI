@@ -22,7 +22,6 @@ box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.25)}
     font-weight: 300;
     font-size: 2rem;
     color: #3F4042;
-    padding-left: 1rem;
 }
 
 .abouttitle {
@@ -37,63 +36,10 @@ box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.25)}
 }
 
 .aboutdescription {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
     font-size: 1.1rem;
-}
-
-.aboutbutton {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 0.75rem 3rem 0.75rem 1rem;
-    overflow: hidden;
-    font-weight: 600;
-    text-decoration: none;
-    color: #C08D5D;
-    transition: all 0.15s ease-in-out;
-    border-radius: 0.375rem;
-    background-color: #f9fafb;
-}
-
-.aboutbutton:hover {
-    padding-left: 2.5rem;
-    padding-right: 1.5rem;
- 
-}
-
-.aboutbutton .underline {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 0.063rem;
-    transition: all 0.15s ease-in-out;
-    background-color: #C08D5D;
-}
-
-.aboutbutton:hover .underline {
-    height: 100%;
-}
-
-.aboutbutton .arrow {
-    position: absolute;
-    padding-right: 1rem;
-    
-    transition: transform 0.2s ease-out;
-}
-
-
-
-.aboutbutton-text {
-    position: relative;
-    width: 100%;
-    text-align: left;
-    transition: color 0.2s ease-in-out;
-}
-
-.aboutbutton:hover .aboutbuttontext {
-    color: #ffffff;
 }
 
 .aboutimage {
@@ -102,4 +48,45 @@ box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.25)}
     align-items: center;
     padding: 2.5rem;
     width: 50%;
+}
+.aboutbutton {
+    padding: 10px 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    background: white;
+    border: 2px solid #C08D5D;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+.aboutbutton {
+    border: 2px solid #C08D5D;
+    z-index: 1;
+    color: #C08D5D;
+}
+
+.aboutbutton:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: #C08D5D;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.aboutbutton:hover {
+    color: #FFFFFF;
+}
+
+.aboutbutton:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
 }

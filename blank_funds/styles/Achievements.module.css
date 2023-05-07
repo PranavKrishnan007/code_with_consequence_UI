@@ -43,3 +43,16 @@ box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.2);
     color: var(--primary-color);
     padding: 1rem;
 }
+
+.heroBottom {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2.5rem;
+}
+
+
+@media (min-width: 768px) {
+    .heroBottom{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
