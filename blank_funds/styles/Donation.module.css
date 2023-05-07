@@ -1,0 +1,69 @@
+.containerCSS {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem; /* px-4 */
+    padding-left: 1rem; /* px-4 */
+}
+
+@media only screen and (min-width: 768px) { /* Adjust this breakpoint according to your requirements */
+    .containerCSS {
+        padding-right: 2rem; /* px-8 */
+        padding-left: 2rem; /* px-8 */
+    }
+}
+
+.heightDonate {
+    height: 89%;
+}
+@media only screen and (min-width: 768px) { /* Adjust this breakpoint according to your requirements */
+    .heightDonate {
+        height: 90%;
+    }
+}
+
+.leftSideDiv{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    background: #DBA39A;
+    padding: 3rem;
+}
+
+.l_Heading {
+    color: #FFFFFF;
+    font-size: 2.75rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.input {
+    width: 100%;
+    height: 3rem;
+    background: rgba(240, 219, 219, 0.5);
+    border: 2px solid #FFFFFF;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.input:focus {
+    outline: 2px solid #C08D5D;
+}
+
+.input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.8;
+    font-size: 1rem;
+}

@@ -1,0 +1,47 @@
+.blockWrapper {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+@media (min-width: 768px) {
+    .gridContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.title {
+    font-weight:300;
+    font-size: 3rem;
+    color: #3F4042;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 6rem;
+    color: #3F4042;
+}
+
+.text2xl {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.textxl {
+    font-size: 1rem;
+    padding-top: 0.75rem;
+}

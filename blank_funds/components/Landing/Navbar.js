@@ -1,22 +1,27 @@
-import React from 'react';
-import {BsFillGridFill} from 'react-icons/bs';
-import { useRouter } from 'next/router';
+import React from "react";
+import { BsFillGridFill } from "react-icons/bs";
+import { useRouter } from "next/router";
+import styles from "styles/Navbar.module.css";
 
 export default function Navbar() {
     const router = useRouter();
 
-  return (
-    <div className='flex py-10 fixed z-50 bg-background w-screen drop-shadow-3xl px-28 '>
-        <div className='flex-none'>
-            <BsFillGridFill size={22}/>
+    return (
+        <div className={styles.navbar}>
+            <div className={styles.icon}>
+                <BsFillGridFill size={22} />
+            </div>
+            <div className={styles.menu}>
+                <div className={`${styles.menuItem} ${styles.home}`} onClick={() => router.push("/")}>
+                    Home
+                </div>
+                <div className={styles.menuItem} onClick={() => router.push("/listings")}>
+                    Organisations
+                </div>
+                <div className={styles.menuItem}>Stories</div>
+                <div className={styles.menuItem}>About</div>
+                <div className={styles.menuItem}>Profile</div>
+            </div>
         </div>
-        <div className='grow flex flex-row justify-center space-x-20 font-medium'>
-            <div className='border-b-2 border-transparent hover:border-primary cursor-pointer px-3'>Home</div>
-            <div className='border-b-2 border-transparent hover:border-primary cursor-pointer px-3' onClick={()=>router.push("/listings")}>Organisations</div>
-            <div className='border-b-2 border-transparent hover:border-primary cursor-pointer px-3'>Stories</div>
-            <div className='border-b-2 border-transparent hover:border-primary cursor-pointer px-3'>About</div>
-            <div className='border-b-2 border-transparent hover:border-primary cursor-pointer px-3'>Profile</div>
-        </div>
-    </div>
-  )
+    );
 }
