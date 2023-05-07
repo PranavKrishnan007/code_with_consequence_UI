@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "styles/HeroBottom.module.css";
+import styles from "@/styles/HeroBottom.module.css";
 
 const STATS = [
   {
@@ -23,7 +23,10 @@ export default function HeroBottom() {
         <div className={styles.borderStyle} />
       </div>
       <div className={styles.gridContainer}>
-        <div className="grid grid-cols-1 md:grid-cols-3">
+        <div
+            // className="grid grid-cols-1 md:grid-cols-3"
+            className={styles.girdSection}
+        >
           {STATS.map((stat) => (
             <div className={`${styles.statCard}`}>
               <div className={`${styles.statTitle}`}>
