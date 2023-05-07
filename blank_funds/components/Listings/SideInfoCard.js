@@ -9,7 +9,7 @@ export default function SideInfoCard({ org }) {
       <div className={styles.content}>
         <h3 className={styles.title}>{org.name}</h3>
         <div className={styles.details}>
-          <p>{org.details}</p>
+          <p>{org.about}</p>
         </div>
         <div className={styles.contactInfo}>
           <div className={styles.contactItem}>
