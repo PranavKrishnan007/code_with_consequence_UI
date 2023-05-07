@@ -1,5 +1,5 @@
 import React from "react";
-// import hero_video from '/images/hero_video.mp4'
+import styles from 'styles/Achievements.module.css';
 
 const STATS = [
   {
@@ -18,22 +18,22 @@ const STATS = [
 
 export default function HeroBottom() {
   return (
-    <div className="py-10">
-      <hr style={{strokeWidth: "20px"}}/>
-      <h1 className="text-5xl px-20 font-semibold py-10">Achievements</h1>
-      <div className="grid grid-cols-1 gap-10 px-20 md:grid-cols-3 pb-10">
+    <div className={styles.achievements}>
+      <hr className={styles.hrStyle} />
+      <h1 className={styles.achievementsTitle}>Achievements</h1>
+      <div className={`${styles.gridContainer} grid grid-cols-1 gap-10 md:grid-cols-3`}>
         {STATS.map((stat) => (
-          <div className="flex justify-center flex-col p-8 bg-background drop-shadow-3xl">
-            <div className="text-2xl font-semibold">
+          <div className={styles.statCard}>
+            <div className={styles.statTitle}>
               {stat.title}
             </div>
-            <div className="text-xl text-primary p-4">
+            <div className={`${styles.statText} p-4`}>
               {stat.text}
             </div>
           </div>
         ))}
       </div>
-      <hr/>
+      <hr />
     </div>
   );
 }

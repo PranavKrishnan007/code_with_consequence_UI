@@ -1,0 +1,81 @@
+.sideInfoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    background-color: var(--primary);
+    color: var(--background);
+    height: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: left;
+    max-width: 32rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.details {
+    max-height: 15rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+}
+
+.contactText {
+    margin-left: 1rem;
+}
+
+.progress {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.progressBar {
+    width: 100%;
+    height: 1rem;
+    background-color: var(--background);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.progressFill {
+    width: 45%;
+    height: 100%;
+    background-color: var(--tertiary);
+    border-radius: 1rem;
+}
+
+.donateButton {
+    border: 0.4rem solid var(--primary);
+    background-color: var(--background);
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+}

@@ -1,0 +1,89 @@
+.container {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.hrContainer {
+    width: 100%;
+    padding-left: 5rem;
+}
+
+.borderStyle {
+    border: 2px solid var(--poop);
+}
+
+.gridContainer {
+    padding-left: 7rem;
+}
+
+.statCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.statTitle {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.statText {
+    font-size: 1.125rem;
+    color: var(--poop);
+}
+
+.wavyLineContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.quoteContainer {
+    max-width: calc(100% - 5rem);
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.quoteIcon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: #d1d5db;
+}
+
+.quoteText {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--poop);
+}
+
+.quoteInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    gap: 0.75rem;
+}
+
+.quoteProfile {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.quoteName {
+    padding-right: 0.75rem;
+    font-weight: 500;
+    color: #111827;
+}
+
+.quoteJob {
+    padding-left: 0.75rem;
+    font-size: 0.875rem;
+    color: #6b7280;
+}

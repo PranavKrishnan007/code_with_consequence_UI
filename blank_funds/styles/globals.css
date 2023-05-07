@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 .containerCSS {
     max-width: 100%;
@@ -39,4 +39,28 @@
 
 .paddingDonate {
     padding: 2rem;
+}
+
+:root {
+    --background: #FEFCF3;
+    --poop: #C08D5D;
+    --tertiary: #F5EBE0;
+    --secondary: #F0DBDB;
+    --primary: #DBA39A;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Montserrat';
+    background-color: white;
+}
+
+
+.dropShadow-2xl {
+    box-shadow: 0px 0px 60px rgba(192, 141, 93, 0.4);
+}
+
+.dropShadow-3xl {
+    box-shadow: 0px 0px 90px rgba(192, 141, 93, 0.4);
 }
