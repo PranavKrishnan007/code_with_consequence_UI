@@ -9,8 +9,7 @@ import Footer from "@/components/Landing/Footer";
 export default function Home() {
   return (
     <div>
-        <Navbar />
-  
+      <Navbar />
       <Hero />
       <div className="container mx-auto px-8 md:px-16">
         <HeroBottom />
