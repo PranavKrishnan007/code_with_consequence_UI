@@ -3,10 +3,10 @@ import Image from "next/image";
 import { GoLocation } from "react-icons/go";
 import styles from "styles/OrgCard.module.css";
 
-export const orgs = [
+export const orgsDummy = [
   {
     name: "UNICEF",
-    details:
+    about:
       "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
     location: "pfund",
     image: "/assets/kids_looking_up.png",
@@ -16,7 +16,7 @@ export const orgs = [
   },
   {
     name: "pfund",
-    details:
+    about:
       "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
     location: "pfund",
     image: "/assets/kids_looking_up.png",
@@ -26,7 +26,7 @@ export const orgs = [
   },
   {
     name: "ABC",
-    details:
+    about:
       "the big big components,g big components, Create a platform that allow s  users g big components, Create a platform that allows users Create a  platform that allows users to donate to charities and non-profit  organizations. You can create a platform that features different charities, donation options, and progress tracking.",
     location: "pfund",
     image: "/assets/kids_looking_up.png",
@@ -36,7 +36,8 @@ export const orgs = [
   },
 ];
 
-const OrgCard = ({ onOrgSelection }) => {
+const OrgCard = ({ onOrgSelection, orgs }) => {
+
   const handleClick = (org) => {
     if (onOrgSelection) {
       onOrgSelection(org);
@@ -51,11 +52,11 @@ const OrgCard = ({ onOrgSelection }) => {
           className={styles.orgCard}
         >
           <div>
-            <Image src={id.image} width={1024} height={1024} className="" />
+            <Image src={id.image || "/assets/kids_looking_up.png"} width={1024} height={1024} className="" />
           </div>
           <div className={styles.orgInfo}>
             <h3 className={styles.orgname}>{id.name}</h3>
-            <p className={styles.orgdetails}>{id.details}</p>
+            <p className={styles.orgdetails}>{id.about}</p>
             <div className={styles.orgdocationAndReadMore}>
               <div className={styles.orglocation}>
                 <GoLocation size={22}  />
