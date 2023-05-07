@@ -22,7 +22,7 @@ export default function AboutSection() {
                             <span className={styles.underline}></span>
                             <span className={styles.arrow} arrow-right></span>
                             <span className={styles.arrow} arrow-left></span>
-                            <span className={styles.aboutbuttontext}>Button Text</span>
+                            <span className={styles.aboutbuttontext}>READ MORE</span>
                         </a>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ export default function AboutSection() {
             </div>
             <div className={styles.aboutcontainer}>
                 <div className={styles.aboutimage}>
-                    <img src='/assets/kids_looking_up.png' alt='kids' width={500} height={500} />
+                    <img src='/assets/Charity.png' alt='kids' width={500} height={500} />
                 </div>
                 <div className={styles.aboutcontent}>
                     <div className={styles.aboutsubtitle}>Donate to</div>
@@ -51,7 +51,7 @@ export default function AboutSection() {
                             <span className={styles.underline}></span>
                             <span className={styles.arrow} arrow-right></span>
                             <span className={styles.arrow} arrow-left></span>
-                            <span className={styles.aboutbuttontext}>Button Text</span>
+                            <span className={styles.aboutbuttontext}>READ MORE</span>
                         </a>
                     </div>
                 </div>
