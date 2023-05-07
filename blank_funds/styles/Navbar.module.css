@@ -1,14 +1,14 @@
-.navbar {
+ .navbar {
     display: flex;
     padding: 2.2rem;
     position: sticky;
     top: 0;
     z-index: 50;
     background-color: white;
-   
+
     width: 100%;
     box-shadow: 0px 0px 90px rgba(192, 141, 93, 0.3);
-    
+
 }
 
 .icon {
@@ -57,4 +57,31 @@
         gap: 1rem;
         padding-top: 0.5rem;
     }
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary);
+    border-radius: 25px;
+    padding: 5px 10px;
+
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0 10px;
+    width: 200px;
+}
+
+.searchBar svg {
+    margin-left: 5px;
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.searchBar::placeholder {
+    color: var(--primary);
 }
